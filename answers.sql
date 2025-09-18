@@ -1,8 +1,8 @@
 -- Drop database if it already exists
 DROP DATABASE IF EXISTS clinicDB;
 
--- Create the database
-CREATE DATABASE clinicDB;
+-- Create the database with UTF-8 support
+CREATE DATABASE clinicDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE clinicDB;
 
 -- Table: Specialties
@@ -20,6 +20,7 @@ CREATE TABLE doctors (
     phone VARCHAR(20),
     specialty_id INT NOT NULL,
     FOREIGN KEY (specialty_id) REFERENCES specialties(specialty_id)
+        ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 -- Table: Patients
@@ -29,7 +30,7 @@ CREATE TABLE patients (
     email VARCHAR(100) NOT NULL UNIQUE,
     phone VARCHAR(20),
     date_of_birth DATE,
-    gender ENUM('Male', 'Female', 'Other'),
+    gender ENUM('male', 'female', 'other'),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -40,8 +41,10 @@ CREATE TABLE appointments (
     doctor_id INT NOT NULL,
     appointment_date DATETIME NOT NULL,
     reason VARCHAR(255),
-    status ENUM('Scheduled', 'Completed', 'Cancelled') DEFAULT 'Scheduled',
+    status ENUM('scheduled', 'completed', 'cancelled') DEFAULT 'scheduled',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (patient_id) REFERENCES patients(patient_id),
+    FOREIGN KEY (patient_id) REFERENCES patients(patient_id)
+        ON DELETE RESTRICT ON UPDATE CASCADE,
     FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id)
+        ON DELETE RESTRICT ON UPDATE CASCADE
 );
