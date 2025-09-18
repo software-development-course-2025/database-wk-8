@@ -19,7 +19,6 @@ The following tables are created in the `clinicDB` database:
 - `doctors`: Profiles for each doctor, linked to a specialty
 - `patients`: Patient records with personal details
 - `appointments`: Tracks patient bookings with doctors
-- `appointment_services` – links appointments to services (if applicable)
 
 All tables follow normalization principles up to 2NF.
 
