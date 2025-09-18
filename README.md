@@ -2,14 +2,14 @@
 
 ## 📝 Overview
 
-Design of a relational database schema for managing clinic appointments using MySQL.  
-Purposes include normalization, integrity, and efficient data structure.
+Relational database schema design for a clinic appointment management system using MySQL.  
+Focus areas include normalization, data consistency, and efficient table structure.
 
 ## 📘 Objectives
 
-- Apply database normalization and design principles
-- Create structured tables with proper constraints
-- Define relationships (1:1, 1:N, N:M where applicable)
+- Apply database normalization techniques and design principles (1NF & 2NF)
+- Create structured tables with proper constraints (PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL)
+- Model relationships between entities (1:Many)
 
 ## 🗃️ Schema Overview
 
@@ -33,4 +33,5 @@ Purposes include normalization, integrity, and efficient data structure.
 
 ## 👨‍💻 Author
 
-Augusto Mate – Database Design & Programming with SQL
+Augusto Mate – Database Design & Programming with SQL  
+mate.augusto.mz@gmail.com
