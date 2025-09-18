@@ -26,3 +26,9 @@ The project focuses on designing a relational database schema for a clinic appoi
 
 - MySQL 8.x
 - SQL syntax knowledge (DDL, constraints)
+
+---
+
+### 👨‍💻 Author
+
+Augusto Mate – mate.augusto.mz@gmail.com
