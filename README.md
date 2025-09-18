@@ -1,7 +1,9 @@
 # Week 8 Assignment – Clinic Booking System
 
-This repository contains the Week 8 assignment for the Database Design & Programming with SQL.  
-The project focuses on designing a relational database schema for a clinic appointment system using MySQL.
+## 📝 Overview
+
+Design of a relational database schema for managing clinic appointments using MySQL.  
+Purposes include normalization, integrity, and efficient data structure.
 
 ## 📘 Objectives
 
@@ -29,6 +31,6 @@ The project focuses on designing a relational database schema for a clinic appoi
 
 ---
 
-### 👨‍💻 Author
+## 👨‍💻 Author
 
-Augusto Mate – mate.augusto.mz@gmail.com
+Augusto Mate – Database Design & Programming with SQL
