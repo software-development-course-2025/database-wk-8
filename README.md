@@ -34,7 +34,7 @@ The following tables, all normalized up to **Second Normal Form (2NF)**, are cre
 ## ⚙️ How to Run
 
 1. Open **MySQL Workbench** or your preferred SQL client
-2. Execute the `answers.sql` script
+2. Execute the `clinicDB.sql` script
 3. The script will:
    - Create the `clinicDB` database  
    - Create all required tables  
