@@ -3,7 +3,7 @@
 
 ## 📋 Overview
 
-Relational schema design for a clinic appointment system using **MySQL**.  
+Relational database schema design for a medical clinic appointment scheduling system using **MySQL**.  
 **Focus**: normalized data structure, data integrity, and performance.
 
 
@@ -16,14 +16,19 @@ Relational schema design for a clinic appointment system using **MySQL**.
 
 ## 🗃️ Schema Overview
 
-The following tables are created in the `clinicDB` database:
+The following tables, all normalized up to **Second Normal Form (2NF)**, are created in the `clinicDB` database:
 
 - `specialties`: Stores medical specialty information
 - `doctors`: Profiles for each doctor, linked to a specialty
 - `patients`: Patient records with personal details
 - `appointments`: Tracks patient bookings with doctors
 
-All tables follow normalization principles up to **2NF**.
+
+## 🔽 Visual Schema
+
+![Clinic DB Schema Diagram](assets/clinic-schema-light.png)
+
+> 💡 A dark version of the diagram is also available in the repository under `assets/clinic-schema-dark.png`.
 
 
 ## ⚙️ How to Run
