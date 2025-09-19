@@ -26,6 +26,8 @@ The following tables, all normalized up to **Second Normal Form (2NF)**, are cre
 
 ## 🔽 Visual Schema
 
+The following diagram illustrates the structure of the Clinic Booking System:
+
 ![Clinic DB Schema Diagram](assets/clinic-schema-light.png)
 
 > 💡 A dark version of the diagram is also available in the repository under `assets/clinic-schema-dark.png`.
